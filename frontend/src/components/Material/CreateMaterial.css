@@ -1,0 +1,234 @@
+/* CreateMaterial.css */
+.create-material-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.create-material-header {
+  background: #007bff;
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.create-material-header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.create-material-header p {
+  margin: 10px 0 0 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.create-material-error {
+  background-color: #cce0ff;
+  color: #000000;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #007bff;
+}
+
+.create-material-form {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.create-material-section {
+  margin-bottom: 30px;
+  padding: 25px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  color: #333;
+  border-left: 4px solid #007bff;
+}
+
+.create-material-section-title {
+  margin: 0 0 20px 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.create-material-form-group {
+  margin-bottom: 20px;
+}
+
+.create-material-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.create-material-label-required::after {
+  content: " *";
+  color: #dc3545;
+}
+
+.create-material-input,
+.create-material-select,
+.create-material-textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+
+.create-material-input:focus,
+.create-material-select:focus,
+.create-material-textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.create-material-textarea {
+  min-height: 100px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.create-material-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.create-material-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Form Actions */
+.create-material-form-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 2px solid #e9ecef;
+}
+
+.create-material-submit-btn {
+  padding: 14px 40px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.create-material-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+  background: #0056b3;
+}
+
+.create-material-submit-btn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.create-material-cancel-btn {
+  padding: 14px 40px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.create-material-cancel-btn:hover {
+  background-color: #5a6268;
+  transform: translateY(-1px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .create-material-container {
+    padding: 15px;
+  }
+
+  .create-material-header {
+    padding: 20px;
+  }
+
+  .create-material-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .create-material-form {
+    padding: 20px;
+  }
+
+  .create-material-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .create-material-grid-2 {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .create-material-section {
+    padding: 20px;
+  }
+
+  .create-material-form-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .create-material-submit-btn,
+  .create-material-cancel-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .create-material-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .create-material-header p {
+    font-size: 1rem;
+  }
+
+  .create-material-section {
+    padding: 15px;
+  }
+
+  .create-material-submit-btn,
+  .create-material-cancel-btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+}

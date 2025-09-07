@@ -1,0 +1,980 @@
+Additional Create Form Styles for Consistent Blue/White/Black Theme
+
+/* Create Project Form Styles */
+.create-project-container {
+  background-color: #f8f9ff;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 64, 128, 0.1);
+  border: 1px solid #e1e5e9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.create-project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.create-project-title {
+  color: #004080;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.create-project-subtitle {
+  color: #0059b3;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.create-project-error {
+  color: #dc3545;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.create-project-form {
+  background-color: white;
+  padding: 32px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,64,128,0.1);
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.create-project-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f9fbff;
+  border-radius: 8px;
+  border-left: 4px solid #007bff;
+}
+
+.create-project-section-title {
+  color: #003366;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.create-project-section-title::before {
+  content: '';
+  width: 6px;
+  height: 24px;
+  background-color: #007bff;
+  margin-right: 12px;
+  border-radius: 3px;
+}
+
+.create-project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.create-project-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.create-project-form-group {
+  margin-bottom: 20px;
+}
+
+.create-project-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #003366;
+  font-size: 14px;
+}
+
+.create-project-label-required::after {
+  content: ' *';
+  color: #dc3545;
+}
+
+.create-project-input,
+.create-project-select,
+.create-project-textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #cce0ff;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #ffffff;
+  color: #003366;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 51, 102, 0.1);
+}
+
+.create-project-input:focus,
+.create-project-select:focus,
+.create-project-textarea:focus {
+  outline: none;
+  border-color: #0066cc;
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+}
+
+.create-project-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.create-project-form-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  padding-top: 30px;
+  margin-top: 30px;
+  border-top: 2px solid #e9ecef;
+}
+
+.create-project-submit-btn,
+.create-project-cancel-btn {
+  padding: 14px 32px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.create-project-submit-btn {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+}
+
+.create-project-submit-btn:hover {
+  background: linear-gradient(135deg, #0056b3 0%, #004080 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 86, 179, 0.5);
+}
+
+.create-project-submit-btn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.create-project-cancel-btn {
+  background: linear-gradient(135deg, #6c757d 0%, #545b62 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(108, 117, 125, 0.4);
+}
+
+.create-project-cancel-btn:hover {
+  background: linear-gradient(135deg, #545b62 0%, #3d4142 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(84, 91, 98, 0.5);
+}
+
+
+
+/* Create Task Form Styles */
+.create-task-container {
+  background-color: #f8f9ff;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 64, 128, 0.1);
+  border: 1px solid #e1e5e9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.create-task-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.create-task-title {
+  color: #004080;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.create-task-subtitle {
+  color: #0059b3;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.create-task-error {
+  color: #dc3545;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.create-task-form {
+  background-color: white;
+  padding: 32px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,64,128,0.1);
+}
+
+.create-task-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f9fbff;
+  border-radius: 8px;
+  border-left: 4px solid #007bff;
+}
+
+.create-task-section-title {
+  color: #003366;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.create-task-section-title::before {
+  content: '';
+  width: 6px;
+  height: 24px;
+  background-color: #007bff;
+  margin-right: 12px;
+  border-radius: 3px;
+}
+
+.create-task-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.create-task-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.create-task-form-group {
+  margin-bottom: 20px;
+}
+
+.create-task-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #003366;
+  font-size: 14px;
+}
+
+.create-task-label-required::after {
+  content: ' *';
+  color: #dc3545;
+}
+
+.create-task-input,
+.create-task-select,
+.create-task-textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #cce0ff;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #ffffff;
+  color: #003366;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 51, 102, 0.1);
+}
+
+.create-task-input:focus,
+.create-task-select:focus,
+.create-task-textarea:focus {
+  outline: none;
+  border-color: #0066cc;
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+}
+
+.create-task-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.create-task-form-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  padding-top: 30px;
+  margin-top: 30px;
+  border-top: 2px solid #e9ecef;
+}
+
+.create-task-submit-btn,
+.create-task-cancel-btn {
+  padding: 14px 32px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.create-task-submit-btn {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+}
+
+.create-task-submit-btn:hover {
+  background: linear-gradient(135deg, #0056b3 0%, #004080 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 86, 179, 0.5);
+}
+
+.create-task-submit-btn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.create-task-cancel-btn {
+  background: linear-gradient(135deg, #6c757d 0%, #545b62 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(108, 117, 125, 0.4);
+}
+
+.create-task-cancel-btn:hover {
+  background: linear-gradient(135deg, #545b62 0%, #3d4142 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(84, 91, 98, 0.5);
+}
+
+/* Materials and Equipment Sections */
+.materials-section,
+.equipment-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f9fbff;
+  border-radius: 8px;
+  border-left: 4px solid #28a745;
+}
+
+.equipment-section {
+  border-left-color: #17a2b8;
+}
+
+.material-row,
+.equipment-row {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #e9ecef;
+}
+
+.material-row:last-child,
+.equipment-row:last-child {
+  margin-bottom: 0;
+}
+
+.material-row input,
+.material-row select,
+.equipment-row input,
+.equipment-row select {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #cce0ff;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.material-row button,
+.equipment-row button {
+  padding: 10px 15px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.material-row button:hover,
+.equipment-row button:hover {
+  background-color: #c82333;
+}
+
+.add-btn {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.add-btn:hover {
+  background: linear-gradient(135deg, #1e7e34 0%, #155724 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4);
+}
+
+.add-btn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.remove-btn {
+  padding: 8px 12px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.remove-btn:hover {
+  background-color: #c82333;
+}
+
+/* List and View Styles for Consistent Blue/White/Black Theme */
+.client-list-container,
+.project-list-container,
+.task-list-container,
+.equipment-list-container,
+.material-list-container,
+.financial-list-container,
+.user-list-container {
+  background-color: #f8f9ff;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.client-list-header,
+.project-list-header,
+.task-list-header,
+.equipment-list-header,
+.material-list-header,
+.financial-list-header,
+.user-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.client-list-title,
+.project-list-title,
+.task-list-title,
+.equipment-list-title,
+.material-list-title,
+.financial-list-title,
+.user-list-title {
+  color: #004080;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.client-list-table,
+.project-list-table,
+.task-list-table,
+.equipment-list-table,
+.material-list-table,
+.financial-list-table,
+.user-list-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 64, 128, 0.1);
+}
+
+.client-list-table thead tr,
+.project-list-table thead tr,
+.task-list-table thead tr,
+.equipment-list-table thead tr,
+.material-list-table thead tr,
+.financial-list-table thead tr,
+.user-list-table thead tr {
+  background-color: #004080;
+  color: white;
+}
+
+.client-list-table th,
+.project-list-table th,
+.task-list-table th,
+.equipment-list-table th,
+.material-list-table th,
+.financial-list-table th,
+.user-list-table th {
+  padding: 18px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.client-list-table tbody tr,
+.project-list-table tbody tr,
+.task-list-table tbody tr,
+.equipment-list-table tbody tr,
+.material-list-table tbody tr,
+.financial-list-table tbody tr,
+.user-list-table tbody tr {
+  border-bottom: 1px solid #d9e6f2;
+  transition: background-color 0.3s ease;
+}
+
+.client-list-table tbody tr:nth-child(even),
+.project-list-table tbody tr:nth-child(even),
+.task-list-table tbody tr:nth-child(even),
+.equipment-list-table tbody tr:nth-child(even),
+.material-list-table tbody tr:nth-child(even),
+.financial-list-table tbody tr:nth-child(even),
+.user-list-table tbody tr:nth-child(even) {
+  background-color: #f0f6ff;
+}
+
+.client-list-table tbody tr:hover,
+.project-list-table tbody tr:hover,
+.task-list-table tbody tr:hover,
+.equipment-list-table tbody tr:hover,
+.material-list-table tbody tr:hover,
+.financial-list-table tbody tr:hover,
+.user-list-table tbody tr:hover {
+  background-color: #d6e4ff;
+}
+
+.client-list-table td,
+.project-list-table td,
+.task-list-table td,
+.equipment-list-table td,
+.material-list-table td,
+.financial-list-table td,
+.user-list-table td {
+  padding: 18px;
+  color: #003366;
+  vertical-align: middle;
+}
+
+/* Action buttons for list views */
+.list-action-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 8px;
+}
+
+.list-action-btn.edit {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+}
+
+.list-action-btn.edit:hover {
+  background: linear-gradient(135deg, #0056b3 0%, #004080 100%);
+  transform: translateY(-2px);
+}
+
+.list-action-btn.delete {
+  background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+  color: white;
+}
+
+.list-action-btn.delete:hover {
+  background: linear-gradient(135deg, #c82333 0%, #a02622 100%);
+  transform: translateY(-2px);
+}
+
+.list-action-btn.view {
+  background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+  color: white;
+}
+
+.list-action-btn.view:hover {
+  background: linear-gradient(135deg, #1e7e34 0%, #155724 100%);
+  transform: translateY(-2px);
+}
+
+/* Details View Styles */
+.client-details-container,
+.project-details-container,
+.task-details-container,
+.equipment-details-container,
+.material-details-container,
+.financial-details-container,
+.user-details-container {
+  background-color: #f8f9ff;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.client-details-card,
+.project-details-card,
+.task-details-card,
+.equipment-details-card,
+.material-details-card,
+.financial-details-card,
+.user-details-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 64, 128, 0.1);
+  margin-bottom: 20px;
+}
+
+.client-details-title,
+.project-details-title,
+.task-details-title,
+.equipment-details-title,
+.material-details-title,
+.financial-details-title,
+.user-details-title {
+  color: #004080;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.details-item {
+  padding: 15px;
+  background-color: #f9fbff;
+  border-radius: 8px;
+  border-left: 4px solid #007bff;
+}
+
+.details-label {
+  font-weight: 600;
+  color: #003366;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.details-value {
+  color: #00264d;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Dashboard Styles for Consistency */
+.admin-dashboard,
+.client-manager-dashboard,
+.project-manager-dashboard,
+.site-supervisor-dashboard,
+.inventory-dashboard,
+.financial-manager-dashboard {
+  background-color: #f8f9ff;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0f0ff 0%, #ffffff 100%);
+  color: #003366;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.dashboard-title {
+  color: #004080;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.dashboard-subtitle {
+  color: #0059b3;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.dashboard-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.dashboard-stat-card {
+  padding: 20px;
+  background-color: #f9fbff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 64, 128, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 64, 128, 0.15);
+}
+
+.dashboard-stat-card h3 {
+  color: #004080;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.dashboard-actions {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dashboard-action-btn {
+  padding: 16px 32px;
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dashboard-action-btn:hover {
+  background: linear-gradient(135deg, #0056b3 0%, #004080 100%);
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(0, 86, 179, 0.5);
+}
+
+.dashboard-action-btn.primary {
+  background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+}
+
+.dashboard-action-btn.primary:hover {
+  background: linear-gradient(135deg, #1e7e34 0%, #155724 100%);
+  box-shadow: 0 8px 25px rgba(30, 126, 52, 0.5);
+}
+
+.dashboard-action-btn.secondary {
+  background: linear-gradient(135deg, #6c757d 0%, #545b62 100%);
+  box-shadow: 0 4px 15px rgba(108, 117, 125, 0.4);
+}
+
+.dashboard-action-btn.secondary:hover {
+  background: linear-gradient(135deg, #545b62 0%, #3d4142 100%);
+  box-shadow: 0 8px 25px rgba(84, 91, 98, 0.5);
+}
+
+/* Responsive Design for All Components */
+@media (max-width: 768px) {
+  .create-project-container,
+  .create-task-container,
+  .client-list-container,
+  .project-list-container,
+  .task-list-container,
+  .equipment-list-container,
+  .material-list-container,
+  .financial-list-container,
+  .user-list-container,
+  .admin-dashboard,
+  .client-manager-dashboard,
+  .project-manager-dashboard,
+  .site-supervisor-dashboard,
+  .inventory-dashboard,
+  .financial-manager-dashboard {
+    padding: 16px;
+  }
+
+  .create-project-header,
+  .create-task-header,
+  .client-list-header,
+  .project-list-header,
+  .task-list-header,
+  .equipment-list-header,
+  .material-list-header,
+  .financial-list-header,
+  .user-list-header,
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .create-project-title,
+  .create-task-title,
+  .client-list-title,
+  .project-list-title,
+  .task-list-title,
+  .equipment-list-title,
+  .material-list-title,
+  .financial-list-title,
+  .user-list-title,
+  .dashboard-title {
+    font-size: 2rem;
+  }
+
+  .create-project-grid,
+  .create-task-grid,
+  .details-grid,
+  .dashboard-stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+
+  .create-project-table th,
+  .create-project-table td,
+  .client-list-table th,
+  .client-list-table td,
+  .project-list-table th,
+  .project-list-table td,
+  .task-list-table th,
+  .task-list-table td,
+  .equipment-list-table th,
+  .equipment-list-table td,
+  .material-list-table th,
+  .material-list-table td,
+  .financial-list-table th,
+  .financial-list-table td,
+  .user-list-table th,
+  .user-list-table td {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .create-project-form-actions,
+  .create-task-form-actions,
+  .dashboard-actions {
+    flex-direction: column;
+  }
+
+  .create-project-submit-btn,
+  .create-project-cancel-btn,
+  .create-task-submit-btn,
+  .create-task-cancel-btn,
+  .dashboard-action-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .create-project-container,
+  .create-task-container,
+  .client-list-container,
+  .project-list-container,
+  .task-list-container,
+  .equipment-list-container,
+  .material-list-container,
+  .financial-list-container,
+  .user-list-container,
+  .admin-dashboard,
+  .client-manager-dashboard,
+  .project-manager-dashboard,
+  .site-supervisor-dashboard,
+  .inventory-dashboard,
+  .financial-manager-dashboard {
+    padding: 15px;
+  }
+
+  .create-project-title,
+  .create-task-title,
+  .client-list-title,
+  .project-list-title,
+  .task-list-title,
+  .equipment-list-title,
+  .material-list-title,
+  .financial-list-title,
+  .user-list-title,
+  .dashboard-title {
+    font-size: 1.8rem;
+  }
+
+  .create-project-grid,
+  .create-task-grid,
+  .details-grid,
+  .dashboard-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .create-project-table th,
+  .create-project-table td,
+  .client-list-table th,
+  .client-list-table td,
+  .project-list-table th,
+  .project-list-table td,
+  .task-list-table th,
+  .task-list-table td,
+  .equipment-list-table th,
+  .equipment-list-table td,
+  .material-list-table th,
+  .material-list-table td,
+  .financial-list-table th,
+  .financial-list-table td,
+  .user-list-table th,
+  .user-list-table td {
+    padding: 10px;
+    font-size: 13px;
+  }
+}

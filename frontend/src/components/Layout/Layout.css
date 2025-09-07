@@ -1,0 +1,53 @@
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background: #2c3e50;
+  color: white;
+  overflow-y: auto;
+}
+
+.logo {
+  padding: 20px;
+  text-align: center;
+  background: #1a252f;
+}
+
+.logo h2 {
+  margin: 0;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  border-bottom: 1px solid #34495e;
+}
+
+.nav-links li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.nav-links li a:hover {
+  background: #34495e;
+}
+
+.nav-links li.active a {
+  background: #3498db;
+}
+
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  background: #f5f5f5;
+}

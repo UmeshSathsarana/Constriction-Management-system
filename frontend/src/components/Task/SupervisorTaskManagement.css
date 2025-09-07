@@ -1,0 +1,259 @@
+/* Site Supervisor Task Management */
+.site-supervisor-task-management {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.site-supervisor-loading {
+  padding: 20px;
+  text-align: center;
+  color: #003366;
+}
+
+.site-supervisor-error {
+  padding: 20px;
+  color: red;
+  text-align: center;
+}
+
+.site-supervisor-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.site-supervisor-section h3 {
+  color: #003366;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* Workers Grid */
+.site-supervisor-workers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.site-supervisor-worker-card {
+  padding: 15px;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.site-supervisor-worker-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 64, 128, 0.1);
+}
+
+.site-supervisor-worker-card h4 {
+  color: #004080;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.site-supervisor-worker-status {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  background-color: #007bff;
+}
+
+.site-supervisor-worker-status.working {
+  background-color: #28a745;
+}
+
+/* Tasks Grid */
+.site-supervisor-tasks-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.site-supervisor-task-card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.site-supervisor-task-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 64, 128, 0.1);
+}
+
+.site-supervisor-task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.site-supervisor-task-header h4 {
+  margin: 0 0 10px 0;
+  color: #004080;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.site-supervisor-task-meta {
+  margin: 5px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.site-supervisor-task-meta strong {
+  color: #003366;
+  font-weight: 600;
+}
+
+.site-supervisor-task-badges {
+  text-align: right;
+}
+
+.site-supervisor-status-badge,
+.site-supervisor-priority-badge {
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.site-supervisor-status-badge {
+  background-color: #6c757d;
+}
+
+.site-supervisor-status-badge.completed {
+  background-color: #28a745;
+}
+
+.site-supervisor-status-badge.in-progress {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.site-supervisor-status-badge.pending {
+  background-color: #6c757d;
+}
+
+.site-supervisor-priority-badge {
+  background-color: #6c757d;
+}
+
+.site-supervisor-priority-badge.critical {
+  background-color: #dc3545;
+}
+
+.site-supervisor-priority-badge.high {
+  background-color: #fd7e14;
+}
+
+.site-supervisor-priority-badge.medium {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.site-supervisor-priority-badge.low {
+  background-color: #28a745;
+}
+
+.site-supervisor-task-content {
+  margin-bottom: 15px;
+}
+
+.site-supervisor-task-content p {
+  margin: 5px 0;
+  color: #003366;
+}
+
+.site-supervisor-task-description {
+  color: #666;
+  font-size: 14px;
+}
+
+.site-supervisor-task-controls {
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.site-supervisor-assigned-message {
+  margin-bottom: 10px;
+  color: #28a745;
+  font-weight: 600;
+}
+
+.site-supervisor-working-badge {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 10px;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  margin-left: 8px;
+  background-color: #28a745;
+}
+
+.site-supervisor-unassigned-message {
+  margin-bottom: 10px;
+  color: #ffc107;
+  font-weight: 600;
+}
+
+.site-supervisor-assign-controls {
+  margin-bottom: 10px;
+}
+
+.site-supervisor-assign-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #003366;
+}
+
+.site-supervisor-assign-select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-width: 200px;
+  margin-right: 10px;
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.site-supervisor-assign-select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.site-supervisor-remove-btn {
+  padding: 8px 16px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.site-supervisor-remove-btn:hover {
+  background-color: #c82333;
+}

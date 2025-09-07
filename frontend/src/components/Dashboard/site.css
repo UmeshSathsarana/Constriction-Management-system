@@ -1,0 +1,685 @@
+/* Site Supervisor Dashboard Styles */
+.site-supervisor-dashboard {
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0f0ff 0%, #ffffff 100%);
+  color: #003366;
+}
+
+.site-supervisor-dashboard h1 {
+  color: #004080;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.site-supervisor-dashboard h2 {
+  color: #003366;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.site-supervisor-dashboard h3 {
+  color: #0059b3;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Header */
+.site-supervisor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.site-supervisor-logout-btn {
+  background-color: #004080;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.site-supervisor-logout-btn:hover {
+  background-color: #00264d;
+}
+
+/* Navigation Tabs */
+.nav-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #cce0ff;
+  padding-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.nav-tab {
+  padding: 12px 24px;
+  background-color: #e6f0ff;
+  color: #004080;
+  border: none;
+  border-radius: 6px 6px 0 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.nav-tab.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.nav-tab:hover {
+  background-color: #cce0ff;
+}
+
+/* Stats Grid */
+.site-supervisor-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.site-supervisor-stat-card {
+  padding: 25px;
+  background-color: #f9fbff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 64, 128, 0.1);
+  border-left: 5px solid #007bff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.site-supervisor-stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 64, 128, 0.15);
+}
+
+.site-supervisor-stat-card.total {
+  border-left-color: #007bff;
+}
+
+.site-supervisor-stat-card.pending {
+  border-left-color: #ffc107;
+}
+
+.site-supervisor-stat-card.in-progress {
+  border-left-color: #17a2b8;
+}
+
+.site-supervisor-stat-card.completed {
+  border-left-color: #28a745;
+}
+
+.site-supervisor-stat-card h3 {
+  color: #004080;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.site-supervisor-stat-card p {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #00264d;
+  margin: 0;
+}
+
+/* Tasks Table */
+.site-supervisor-tasks-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 64, 128, 0.1);
+}
+
+.site-supervisor-tasks-table thead tr {
+  background-color: #004080;
+  color: white;
+}
+
+.site-supervisor-tasks-table th {
+  padding: 18px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.site-supervisor-tasks-table tbody tr {
+  border-bottom: 1px solid #d9e6f2;
+  transition: background-color 0.3s ease;
+}
+
+.site-supervisor-tasks-table tbody tr:nth-child(even) {
+  background-color: #f0f6ff;
+}
+
+.site-supervisor-tasks-table tbody tr:hover {
+  background-color: #d6e4ff;
+}
+
+.site-supervisor-tasks-table td {
+  padding: 18px;
+  color: #003366;
+  vertical-align: middle;
+}
+
+/* Status Badges */
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.status-badge.pending {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.status-badge.in-progress {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.status-badge.completed {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Priority Badges */
+.priority-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.priority-badge.low {
+  background-color: #28a745;
+  color: white;
+}
+
+.priority-badge.medium {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.priority-badge.high {
+  background-color: #dc3545;
+  color: white;
+}
+
+.priority-badge.critical {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Status Select */
+.status-select {
+  padding: 8px 12px;
+  border: 1px solid #cce0ff;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.status-select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Progress Report Form */
+.site-supervisor-progress-form {
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 64, 128, 0.1);
+  margin-bottom: 40px;
+}
+
+.site-supervisor-progress-form h2 {
+  color: #003366;
+  margin-bottom: 24px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.site-supervisor-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.site-supervisor-form-group {
+  margin-bottom: 18px;
+}
+
+.site-supervisor-form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 700;
+  color: #003366;
+}
+
+.site-supervisor-form-input,
+.site-supervisor-form-select,
+.site-supervisor-form-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cce0ff;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.site-supervisor-form-input:focus,
+.site-supervisor-form-select:focus,
+.site-supervisor-form-textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.site-supervisor-form-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Progress Bar */
+.site-supervisor-progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 12px;
+  margin-top: 10px;
+}
+
+.site-supervisor-progress-fill {
+  height: 100%;
+  background-color: #007bff;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+/* Image Upload Section */
+.site-supervisor-image-upload {
+  margin-bottom: 20px;
+}
+
+.site-supervisor-image-upload label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #003366;
+}
+
+.site-supervisor-file-input {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.site-supervisor-images-preview {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.site-supervisor-image-item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid #d9e6f2;
+}
+
+.site-supervisor-image-preview {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+}
+
+.site-supervisor-image-remove {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.site-supervisor-image-remove:hover {
+  background-color: #c82333;
+}
+
+/* Submit Button */
+.site-supervisor-submit-btn {
+  padding: 14px 28px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+}
+
+.site-supervisor-submit-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 86, 179, 0.5);
+}
+
+.site-supervisor-submit-btn:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Progress Reports Grid */
+.site-supervisor-reports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 24px;
+}
+
+.site-supervisor-report-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 64, 128, 0.1);
+  padding: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.site-supervisor-report-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 64, 128, 0.15);
+}
+
+.site-supervisor-report-card h3 {
+  color: #004080;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.site-supervisor-report-card p {
+  margin: 8px 0;
+  color: #003366;
+  font-size: 14px;
+}
+
+.site-supervisor-report-card strong {
+  color: #004080;
+  font-weight: 600;
+}
+
+/* Report Progress Bar */
+.site-supervisor-report-progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 12px;
+  margin: 15px 0;
+}
+
+.site-supervisor-report-progress-fill {
+  height: 100%;
+  background-color: #007bff;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+/* Site Images Grid */
+.site-supervisor-site-images {
+  margin-top: 15px;
+}
+
+.site-supervisor-site-images h4 {
+  color: #004080;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.site-supervisor-site-images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 8px;
+}
+
+.site-supervisor-site-image {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border: 1px solid #d9e6f2;
+}
+
+.site-supervisor-site-image:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .site-supervisor-dashboard {
+    padding: 18px;
+  }
+
+  .site-supervisor-dashboard h1 {
+    font-size: 2.2rem;
+  }
+
+  .site-supervisor-stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+  }
+
+  .site-supervisor-reports-grid {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+}
+
+@media (max-width: 992px) {
+  .site-supervisor-dashboard {
+    padding: 18px;
+  }
+
+  .site-supervisor-dashboard h1 {
+    font-size: 2.2rem;
+  }
+
+  .site-supervisor-stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  .site-supervisor-progress-form {
+    padding: 28px;
+  }
+
+  .site-supervisor-report-card {
+    padding: 20px;
+  }
+
+  .site-supervisor-reports-grid {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .site-supervisor-dashboard {
+    padding: 16px;
+  }
+
+  .site-supervisor-dashboard h1 {
+    font-size: 2rem;
+  }
+
+  .site-supervisor-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .nav-tabs {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .nav-tab {
+    width: 100%;
+    text-align: center;
+  }
+
+  .site-supervisor-stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 18px;
+  }
+
+  .site-supervisor-form-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .site-supervisor-images-preview {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+  }
+
+  .site-supervisor-reports-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-supervisor-site-images-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+}
+
+@media (max-width: 576px) {
+  .site-supervisor-dashboard {
+    padding: 15px;
+  }
+
+  .site-supervisor-dashboard h1 {
+    font-size: 1.8rem;
+  }
+
+  .site-supervisor-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .site-supervisor-stat-card {
+    padding: 20px;
+  }
+
+  .site-supervisor-progress-form {
+    padding: 24px;
+  }
+
+  .site-supervisor-report-card {
+    padding: 18px;
+  }
+
+  .site-supervisor-tasks-table th,
+  .site-supervisor-tasks-table td {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .site-supervisor-images-preview {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+  }
+
+  .site-supervisor-site-images-grid {
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .site-supervisor-dashboard {
+    padding: 12px;
+  }
+
+  .site-supervisor-dashboard h1 {
+    font-size: 1.6rem;
+  }
+
+  .site-supervisor-stat-card {
+    padding: 18px;
+  }
+
+  .site-supervisor-stat-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .site-supervisor-stat-card p {
+    font-size: 2rem;
+  }
+
+  .site-supervisor-progress-form {
+    padding: 20px;
+  }
+
+  .site-supervisor-report-card {
+    padding: 16px;
+  }
+
+  .site-supervisor-tasks-table th,
+  .site-supervisor-tasks-table td {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .site-supervisor-form-input,
+  .site-supervisor-form-select,
+  .site-supervisor-form-textarea {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .site-supervisor-submit-btn {
+    width: 100%;
+    padding: 16px 0;
+  }
+}
